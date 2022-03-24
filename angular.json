@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "maveric-connect-web-app"
+  "defaultProject": "maveric-connect-web-app",
+  "cli": {
+    "analytics": false
+  }
 }
