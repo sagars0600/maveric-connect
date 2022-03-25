@@ -1,4 +1,3 @@
-
 import { PostDetailsComponent } from './post-details/post-details.component';
 
 import { SignupComponent } from './signup/signup.component';
@@ -12,12 +11,11 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
   { path: 'posts', component: PostComponent },
-  {path:'posts-details',component:PostDetailsComponent}
-
+  { path: 'posts-details', component: PostDetailsComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}

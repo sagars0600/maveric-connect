@@ -1,4 +1,4 @@
-<section id="cover" class="min-vh-100">
+<!-- <section id="cover" class="min-vh-100">
   <div id="cover-caption">
     <div class="container">
       <div class="row text-white">
@@ -95,18 +95,18 @@
                   placeholder="Confirm Password"
                 />
               </div>
-              <!-- <div class="form-group">
+              <div class="form-group">
 
                 <input type="radio" class="form-control" name="gender" value="male" /> Male
                 <input type="radio"  class="form-control"name="gender" value="female" /> Female
-              </div> -->
+              </div>
 
-              <!-- <div class="form-check">
+              <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                 <label class="form-check-label" for="flexRadioDefault1">
                   Default radio
                 </label>
-              </div> -->
+              </div>
 
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Address" />
@@ -118,9 +118,9 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
-<!-- <section id="cover" class="min-vh-100">
+<section id="cover" class="min-vh-100">
   <div id="cover-caption">
     <div class="container">
       <div class="row text-white">
@@ -129,32 +129,38 @@
         >
           <h1 class="display-4 py-2 text-truncate">Signup.</h1>
           <div class="px-2">
-            <form action="" class="justify-content-center">
+            <form action="" class="justify-content-center" >
               <div class="form-group">
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="UserName"
+                  placeholder="Enter FirstName"
+                  [(ngModel)]="firstname"
+                  name="firstname"
                 />
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email" />
-              </div>
-              <div class="form-group">
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Password"
-                />
+                <input type="email" class="form-control" placeholder="Enter Email" [(ngModel)]="email" name="email"/>
               </div>
               <div class="form-group">
                 <input
                   type="password"
                   class="form-control"
-                  placeholder="Confirm Password"
+                  placeholder="Enter Password"
+                  name="password"
+                  [(ngModel)]="password"
                 />
               </div>
-              <button type="submit" class="btn btn-primary btn-lg">
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Enter Confirm Password"
+                  name="confirmPass"
+                  [(ngModel)]="cpassword"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" (click)="signup()">
                 SignUp
               </button>
               <div class="form-group">
@@ -166,4 +172,4 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>

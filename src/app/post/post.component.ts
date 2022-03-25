@@ -11,14 +11,14 @@ export class PostComponent implements OnInit {
   postedBy:any={};
   comments:any;
   constructor(private http : HttpClient) {
-    let url= "http://localhost:3010/posts/2";
+    let url= "http://localhost:3010/posts/1";
     this.http.get(url).subscribe((response:any)=>{
       console.log(response)
       this.post=response
       this.postedBy=response.postedBy;
     })
 
-    let url1="http://localhost:8000/posts/2/comments"
+    let url1="http://localhost:8000/posts/1/comments"
     this.http.get(url1).subscribe((response:any)=>{
       console.log(response)
       this.comments=response
