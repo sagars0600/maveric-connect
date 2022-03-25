@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PostComponent } from './post/post.component';
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
-  {path: "**", component:SignupComponent}
+  {path: '', component:SignupComponent},
+  {path:'posts' , component:PostComponent}
 ];
 
 @NgModule({

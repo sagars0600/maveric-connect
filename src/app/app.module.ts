@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { SignupComponent } from './signup/signup.component';
+import { PostComponent } from './post/post.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -13,12 +15,15 @@ import { SignupComponent } from './signup/signup.component';
     AppComponent,
     HeaderComponent,
     SignupComponent,
+    PostComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
