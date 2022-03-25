@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
+import { PostDetailsComponent } from './post-details/post-details.component';
 
 import { FooterComponent } from './footer/footer.component';
 
@@ -23,6 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
 
+    PostDetailsComponent,
+
+
     FooterComponent,
 
 
@@ -31,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     SignupComponent,
     PostComponent,
+
 
 
 
