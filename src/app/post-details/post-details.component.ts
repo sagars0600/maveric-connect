@@ -23,22 +23,22 @@ export class PostDetailsComponent implements OnInit {
       },
       {
         post:'A New Book',
-        likeCounts: '1',
-        commentCounts: '5',
+        likeCounts: '4',
+        commentCounts: '2',
         postedBy: {
-          firstName: 'Sagar',
-          middleName: 'singh',
-          lastName: 'SOlanki',
+          firstName: 'Roody',
+          middleName: 'Kane',
+          lastName: 'Bro',
         }
       },
       {
         post:'A New Book',
-        likeCounts: '1',
-        commentCounts: '5',
+        likeCounts: '3',
+        commentCounts: '9',
         postedBy: {
-          firstName: 'Sagar',
-          middleName: 'singh',
-          lastName: 'SOlanki',
+          firstName: 'John',
+          middleName: 'Maddy',
+          lastName: 'Cena',
         }
       }
 

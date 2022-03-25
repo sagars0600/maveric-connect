@@ -12,6 +12,7 @@ import { SignupComponent } from './signup/signup.component';
 import { PostComponent } from './post/post.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -32,6 +33,7 @@ import { LoginComponent } from './login/login.component';
     SignupComponent,
     PostComponent,
     LoginComponent,
+    PageNotFoundComponent,
 
 
 
