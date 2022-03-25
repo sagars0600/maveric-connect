@@ -4,7 +4,7 @@
     <span class="text-1">Maveric-Connect</span>
   </a>
 
-  <div class="form-inline" >
+  <div class="form-inline"  *ngIf="isLogged">
     <div class="dropdown show">
       <a class="btn btn-primary dropdown-toggle"  href="#" role="button"  data-bs-toggle="dropdown" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Profile
@@ -12,7 +12,7 @@
       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
         <a class="dropdown-item" href="#">My Profile</a>
         <a class="dropdown-item" href="#">Setting</a>
-        <a class="dropdown-item" href="#">Logout </a>
+        <a class="dropdown-item" style="cursor: pointer;" (click)="logout()">Logout </a>
       </div>
     </div>
   </div>

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  login = false;
-  constructor() { }
+  isLogged : boolean = false;
+  constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  ngDoCheck(){
+    if(localStorage.token){
+      this.isLogged = true;
+    }else{
+      this.isLogged = false;
+    }
   }
-
+  logout(){
+    localStorage.clear();
+    this.router.navigate(['/login']);
+  }
 }

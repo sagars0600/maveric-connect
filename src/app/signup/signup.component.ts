@@ -35,7 +35,7 @@ export class SignupComponent implements OnInit {
       let url = 'http://localhost:3005/users';
       this.http.post(url, body).subscribe((response: any) => {
         console.log(response);
-        this.router.navigate(['/posts-details'])
+        this.router.navigate(['/login'])
         this.valid = true;
       });
     } else {
