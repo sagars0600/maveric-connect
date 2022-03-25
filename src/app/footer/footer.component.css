@@ -1,4 +1,16 @@
 footer {
   background-color: #214e8f;
   font-family: Roboto;
+  margin-top: 1rem;
+  color: white;
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+.text{
+  font-family: Roboto;
+  color:white;
+  font-weight: 600;
+  margin-left: 1rem;
+  display: flex;
 }

@@ -1,10 +1,10 @@
 <nav class="navbar navbar-light bg-light justify-content-between">
   <a class="navbar-brand d-flex">
     <img src="./../../assets/maveric-logo-updated.png" alt="">
-    <span>Maveric-Connect</span>
+    <span class="text-1">Maveric-Connect</span>
   </a>
 
-  <div class="form-inline">
+  <div class="form-inline" *ngIf="login">
     <div class="dropdown show">
       <a class="btn btn-primary dropdown-toggle"  href="#" role="button"  data-bs-toggle="dropdown" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Profile

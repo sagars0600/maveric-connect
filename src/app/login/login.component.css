@@ -4,7 +4,7 @@
   width: 80%;
  } /* value of your choice which suits your alignment */
 
-#cover {
+#cover{
   background-size: cover;
   height: 100%;
   text-align: center;
@@ -54,3 +54,4 @@ form:before {
   margin-top: 1rem;
 
 }
+
