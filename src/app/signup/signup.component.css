@@ -1,0 +1,55 @@
+
+.center_div {
+  margin: 0 auto;
+  width: 80%; /* value of your choice which suits your alignment */
+
+#cover {
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#cover-caption {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+form:before {
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.text-truncate{
+  color: #214e8f;
+}
+
+.btn{
+  font-weight: 600;
+  color: white;
+  background-color: #214e8f;
+}
+
+.span-deco{
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.span-1{
+  margin-top: 1rem;
+}
+
+.span-2{
+  margin-top: 1rem;
+
+}
