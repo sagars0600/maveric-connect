@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   login() {
-    localStorage.token = 'senil';
+    localStorage.token = 'a7dff4324bsajdk2442czxvcbd53453';
     this.router.navigate(['/posts-details']);
 
   }

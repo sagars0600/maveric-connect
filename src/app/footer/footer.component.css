@@ -3,16 +3,15 @@ footer {
   font-family: Roboto;
   margin-top: 1rem;
   color: white;
-
 }
-.text{
+.text {
   font-family: Roboto;
-  color:white;
+  color: white;
   font-weight: 600;
   margin-left: 1rem;
   display: flex;
 }
 
-.card{
+.card {
   margin-bottom: 1.5rem;
 }
